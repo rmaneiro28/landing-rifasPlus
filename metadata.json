@@ -1,0 +1,7 @@
+{
+  "name": "RifasPlus - Sistema de Rifas Profesional",
+  "description": "Plataforma líder para la creación, gestión y automatización de rifas digitales seguras y eficientes.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
