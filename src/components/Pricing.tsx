@@ -11,20 +11,20 @@ const plans: RafflePlan[] = [
   {
     id: 'free',
     name: 'Inicial',
-    price: '0',
+    price: '9.99',
     features: ['1 Rifa Activa', 'Hasta 100 Números', 'Gestión Manual de Pagos', 'Link Público de Rifa'],
   },
   {
     id: 'pro',
     name: 'Profesional',
-    price: '29',
+    price: '19.99',
     features: ['Rifas Ilimitadas', 'Números Ilimitados (00-9999)', 'Generador de Ticket Digital', 'Conexión WhatsApp Directa', 'Resultados Triple Táchira'],
     recommended: true
   },
   {
     id: 'enterprise',
     name: 'Agencia',
-    price: '99',
+    price: '49.99',
     features: ['10 cuentas de vendedor', 'Panel de Auditoría', 'Dominio Personalizado', 'Soporte Prioritario', 'Exportación de Data'],
   }
 ];

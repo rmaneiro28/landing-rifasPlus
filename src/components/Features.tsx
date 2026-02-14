@@ -21,7 +21,7 @@ const features = [
     color: 'text-[#8b5cf6]'
   },
   {
-    icon: 'fa-whatsapp',
+    icon: 'fa-bell',
     title: 'Notificaciones Pro',
     desc: 'Aviso automático de boletos comprados directamente al WhatsApp del cliente.',
     color: 'text-green-500'

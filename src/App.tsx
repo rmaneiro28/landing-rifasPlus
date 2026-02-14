@@ -12,6 +12,10 @@ import Footer from './components/Footer';
 import FeaturesPage from './pages/FeaturesPage';
 import HowItWorksPage from './pages/HowItWorksPage';
 import PricingPage from './pages/PricingPage';
+import LegalPage from './pages/LegalPage';
+import TermsPage from './pages/TermsPage';
+
+import SuccessStories from './components/SuccessStories';
 
 const App: React.FC = () => {
   const [currentPath, setCurrentPath] = useState('home');
@@ -30,6 +34,10 @@ const App: React.FC = () => {
         return <HowItWorksPage />;
       case 'pricing':
         return <PricingPage />;
+      case 'legal':
+        return <LegalPage navigate={navigate} />;
+      case 'terms':
+        return <TermsPage navigate={navigate} />;
       case 'home':
       default:
         return (
@@ -37,6 +45,7 @@ const App: React.FC = () => {
             <Hero navigate={navigate} />
             <Features compact navigate={navigate} />
             <HowItWorks compact navigate={navigate} />
+            <SuccessStories />
             <Pricing compact navigate={navigate} />
             <Testimonials />
           </>

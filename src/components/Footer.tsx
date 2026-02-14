@@ -49,10 +49,9 @@ const Footer: React.FC<FooterProps> = ({ navigate }) => {
           <div>
             <h4 className="text-xl font-black mb-8 text-[#8b5cf6]">Recursos</h4>
             <ul className="space-y-4 text-gray-400 font-bold">
-              <li><a href="#" className="hover:text-white transition-colors">Blog Pro</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Historias de Éxito</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Guía Legal</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Términos</a></li>
+              <li><button onClick={() => navigate('home')} className="hover:text-white transition-colors">Historias de Éxito</button></li>
+              <li><button onClick={() => navigate('legal')} className="hover:text-white transition-colors">Guía Legal</button></li>
+              <li><button onClick={() => navigate('terms')} className="hover:text-white transition-colors">Términos</button></li>
             </ul>
           </div>
 
