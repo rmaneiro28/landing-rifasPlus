@@ -13,9 +13,9 @@ const Header: React.FC<HeaderProps> = ({ currentPath, navigate }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
-    { label: 'Características', path: 'features' },
-    { label: 'Cómo Funciona', path: 'how-it-works' },
-    { label: 'Precios', path: 'pricing' },
+    { label: 'Características', path: 'caracteristicas' },
+    { label: 'Cómo Funciona', path: 'como-funciona' },
+    { label: 'Precios', path: 'precios' },
   ];
 
   const handleNav = (path: string) => {
@@ -28,7 +28,7 @@ const Header: React.FC<HeaderProps> = ({ currentPath, navigate }) => {
       <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
         <div
           className="flex items-center space-x-3 cursor-pointer group"
-          onClick={() => handleNav('home')}
+          onClick={() => handleNav('inicio')}
         >
           <img src={Logo} alt="RifasPlus" className="h-12 object-contain" />
         </div>

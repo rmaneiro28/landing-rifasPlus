@@ -7,21 +7,21 @@ const testimonials: Testimonial[] = [
     id: 1,
     name: 'Carlos Mendoza',
     role: 'Organizador Independiente',
-    avatar: 'https://picsum.photos/100/100?random=1',
+    avatar: 'https://ui-avatars.com/api/?name=Carlos+Mendoza&background=random&color=fff',
     content: 'RifasPlus cambió la forma en que recaudo fondos para mi fundación. Lo que antes tomaba semanas de papeleo, ahora lo hago en minutos.'
   },
   {
     id: 2,
     name: 'Ana García',
     role: 'Emprendedora',
-    avatar: 'https://picsum.photos/100/100?random=2',
+    avatar: 'https://ui-avatars.com/api/?name=Ana+Garcia&background=random&color=fff',
     content: 'La integración con WhatsApp es increíble. Mis clientes reciben su boleto al instante y eso genera muchísima confianza.'
   },
   {
     id: 3,
     name: 'Roberto Salas',
     role: 'Club Deportivo',
-    avatar: 'https://picsum.photos/100/100?random=3',
+    avatar: 'https://ui-avatars.com/api/?name=Roberto+Salas&background=random&color=fff',
     content: 'Pudimos vender 10,000 boletos sin un solo error. El panel de administración es muy intuitivo incluso para personas no técnicas.'
   }
 ];

@@ -25,11 +25,11 @@ const Footer: React.FC<FooterProps> = ({ navigate }) => {
             </p>
             <div className="flex space-x-5">
               {[
-                { icon: 'fa-facebook-f', color: 'hover:bg-blue-600' },
-                { icon: 'fa-instagram', color: 'hover:bg-pink-600' },
-                { icon: 'fa-whatsapp', color: 'hover:bg-green-600' },
+                { icon: 'fa-facebook-f', color: 'hover:bg-blue-600', link: 'https://facebook.com' },
+                { icon: 'fa-instagram', color: 'hover:bg-pink-600', link: 'https://instagram.com' },
+                { icon: 'fa-whatsapp', color: 'hover:bg-green-600', link: 'https://wa.me/584120000000' },
               ].map((social, i) => (
-                <a key={i} href="#" className={`w-12 h-12 bg-[#181b22] rounded-2xl flex items-center justify-center transition-all duration-300 ${social.color}`}>
+                <a key={i} href={social.link} target="_blank" rel="noopener noreferrer" className={`w-12 h-12 bg-[#181b22] rounded-2xl flex items-center justify-center transition-all duration-300 ${social.color}`}>
                   <i className={`fab ${social.icon} text-xl`}></i>
                 </a>
               ))}
@@ -39,19 +39,19 @@ const Footer: React.FC<FooterProps> = ({ navigate }) => {
           <div>
             <h4 className="text-xl font-black mb-8 text-[#8b5cf6]">Navegación</h4>
             <ul className="space-y-4 text-gray-400 font-bold">
-              <li><button onClick={() => navigate('features')} className="hover:text-white transition-colors">Características</button></li>
-              <li><button onClick={() => navigate('how-it-works')} className="hover:text-white transition-colors">Cómo Funciona</button></li>
-              <li><button onClick={() => navigate('pricing')} className="hover:text-white transition-colors">Precios</button></li>
-              <li><a href="#" className="hover:text-white transition-colors">Ayuda</a></li>
+              <li><button onClick={() => navigate('caracteristicas')} className="hover:text-white transition-colors">Características</button></li>
+              <li><button onClick={() => navigate('como-funciona')} className="hover:text-white transition-colors">Cómo Funciona</button></li>
+              <li><button onClick={() => navigate('precios')} className="hover:text-white transition-colors">Precios</button></li>
+              <li><a href="mailto:soporte@rifasplus.com" className="hover:text-white transition-colors">Ayuda</a></li>
             </ul>
           </div>
 
-          <div>
+          <div className="col-span-1 md:col-span-1">
             <h4 className="text-xl font-black mb-8 text-[#8b5cf6]">Recursos</h4>
             <ul className="space-y-4 text-gray-400 font-bold">
-              <li><button onClick={() => navigate('home')} className="hover:text-white transition-colors">Historias de Éxito</button></li>
+              <li><button onClick={() => navigate('casos-de-exito')} className="hover:text-white transition-colors">Historias de Éxito</button></li>
               <li><button onClick={() => navigate('legal')} className="hover:text-white transition-colors">Guía Legal</button></li>
-              <li><button onClick={() => navigate('terms')} className="hover:text-white transition-colors">Términos</button></li>
+              <li><button onClick={() => navigate('terminos')} className="hover:text-white transition-colors">Términos</button></li>
             </ul>
           </div>
 
@@ -60,7 +60,10 @@ const Footer: React.FC<FooterProps> = ({ navigate }) => {
             <p className="text-gray-400 mb-6 font-medium">Únete a nuestra comunidad de organizadores.</p>
             <div className="flex flex-col space-y-4">
               <input type="email" placeholder="Tu email" className="bg-[#181b22] border border-[#2d333b] rounded-2xl px-6 py-4 w-full focus:ring-2 focus:ring-[#8b5cf6] text-white font-bold" />
-              <button className="bg-[#8b5cf6] hover:bg-[#7c3aed] py-4 rounded-2xl font-black transition-all shadow-xl shadow-purple-500/10">
+              <button
+                onClick={() => alert('¡Gracias por suscribirte! Te mantendremos informado.')}
+                className="bg-[#8b5cf6] hover:bg-[#7c3aed] py-4 rounded-2xl font-black transition-all shadow-xl shadow-purple-500/10"
+              >
                 Suscribirme
               </button>
             </div>

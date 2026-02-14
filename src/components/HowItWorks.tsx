@@ -83,7 +83,7 @@ const HowItWorks: React.FC<HowItWorksProps> = ({ compact = false, navigate }) =>
         {compact && navigate && (
           <div className="text-center">
             <button
-              onClick={() => navigate('how-it-works')}
+              onClick={() => navigate('como-funciona')}
               className="px-12 py-5 bg-[#181b22] border border-[#2d333b] hover:border-[#8b5cf6]/50 text-white rounded-2xl font-bold transition-all text-lg hover:shadow-[0_0_30px_-10px_rgba(139,92,246,0.2)] group"
             >
               <span className="group-hover:text-[#8b5cf6] transition-colors">Ver Guía detallada</span>

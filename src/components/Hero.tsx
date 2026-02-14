@@ -27,7 +27,7 @@ const Hero: React.FC<HeroProps> = ({ navigate }) => {
               <div className="absolute inset-0 bg-white/10 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
             </a>
             <button
-              onClick={() => navigate('how-it-works')}
+              onClick={() => navigate('precios')}
               className="w-full sm:w-auto px-8 py-3 bg-[#181b22] border border-[#2d333b] text-white hover:bg-[#1f242d] rounded-xl font-bold text-lg transition-all"
             >
               Ver Demo <i className="fas fa-play ml-2 text-xs text-[#8b5cf6]"></i>

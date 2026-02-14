@@ -122,7 +122,7 @@ const Features: React.FC<FeaturesProps> = ({ compact = false, navigate }) => {
         {compact && navigate && (
           <div className="text-center pt-8">
             <button
-              onClick={() => navigate('features')}
+              onClick={() => navigate('caracteristicas')}
               className="inline-flex items-center space-x-2 text-[#fbbf24] font-bold text-lg hover:text-[#f59e0b] transition-colors p-4 rounded-xl hover:bg-[#fbbf24]/5"
             >
               <span>Explorar todas las funcionalidades</span>

@@ -10,7 +10,7 @@ const TermsPage: React.FC<TermsPageProps> = ({ navigate }) => {
             <div className="max-w-4xl mx-auto px-4">
                 <div className="mb-12">
                     <button
-                        onClick={() => navigate?.('home')}
+                        onClick={() => navigate?.('inicio')}
                         className="text-[#8b5cf6] font-bold hover:text-white transition-colors mb-6 flex items-center"
                     >
                         <i className="fas fa-arrow-left mr-2"></i> Volver al Inicio

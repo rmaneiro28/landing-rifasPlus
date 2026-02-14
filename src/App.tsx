@@ -14,38 +14,83 @@ import HowItWorksPage from './pages/HowItWorksPage';
 import PricingPage from './pages/PricingPage';
 import LegalPage from './pages/LegalPage';
 import TermsPage from './pages/TermsPage';
+import SuccessStoriesPage from './pages/SuccessStoriesPage';
+import StoryDetailPage from './pages/StoryDetailPage';
 
 import SuccessStories from './components/SuccessStories';
 
 const App: React.FC = () => {
-  const [currentPath, setCurrentPath] = useState('home');
+  const [currentPath, setCurrentPath] = useState('inicio');
+  const [selectedStoryId, setSelectedStoryId] = useState<number | null>(null);
 
-  // Handle browser back/forward if needed, but for now simple state is cleaner
+  // Handle initial URL and browser back/forward
+  useEffect(() => {
+    const handleLocationChange = () => {
+      const path = window.location.pathname;
+      if (path === '/' || path === '/index.html') {
+        setCurrentPath('inicio');
+      } else if (path.startsWith('/caso/')) {
+        const id = parseInt(path.split('/')[2]);
+        if (!isNaN(id)) {
+          setSelectedStoryId(id);
+          setCurrentPath('caso');
+        }
+      } else {
+        // Strip leading slash
+        const route = path.substring(1);
+        if (['caracteristicas', 'como-funciona', 'precios', 'legal', 'terminos', 'casos-de-exito'].includes(route)) {
+          setCurrentPath(route);
+        } else {
+          setCurrentPath('inicio');
+        }
+      }
+    };
+
+    handleLocationChange();
+
+    window.addEventListener('popstate', handleLocationChange);
+    return () => window.removeEventListener('popstate', handleLocationChange);
+  }, []);
+
   const navigate = (path: string) => {
-    setCurrentPath(path);
+    if (path.startsWith('caso/')) {
+      const id = parseInt(path.split('/')[1]);
+      setSelectedStoryId(id);
+      setCurrentPath('caso');
+      window.history.pushState({}, '', `/${path}`);
+    } else {
+      setCurrentPath(path);
+      // If path is home, clear URL
+      const url = path === 'inicio' ? '/' : `/${path}`;
+      window.history.pushState({}, '', url);
+    }
     window.scrollTo(0, 0);
   };
 
   const renderContent = () => {
     switch (currentPath) {
-      case 'features':
+      case 'caracteristicas':
         return <FeaturesPage />;
-      case 'how-it-works':
+      case 'como-funciona':
         return <HowItWorksPage />;
-      case 'pricing':
+      case 'precios':
         return <PricingPage />;
       case 'legal':
         return <LegalPage navigate={navigate} />;
-      case 'terms':
+      case 'terminos':
         return <TermsPage navigate={navigate} />;
-      case 'home':
+      case 'casos-de-exito':
+        return <SuccessStoriesPage navigate={navigate} />;
+      case 'caso':
+        return selectedStoryId ? <StoryDetailPage storyId={selectedStoryId} navigate={navigate} /> : <SuccessStoriesPage navigate={navigate} />;
+      case 'inicio':
       default:
         return (
           <>
             <Hero navigate={navigate} />
             <Features compact navigate={navigate} />
             <HowItWorks compact navigate={navigate} />
-            <SuccessStories />
+            <SuccessStories compact navigate={navigate} />
             <Pricing compact navigate={navigate} />
             <Testimonials />
           </>
