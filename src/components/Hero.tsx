@@ -12,7 +12,7 @@ const Hero: React.FC<HeroProps> = ({ navigate }) => {
         <div className="max-w-4xl mx-auto text-center">
           <div className="inline-flex items-center space-x-2 py-2 px-5 mb-8 rounded-full bg-[#fbbf24]/10 border border-[#fbbf24]/20 text-[#fbbf24] font-bold text-xs uppercase tracking-widest shadow-lg shadow-yellow-500/5">
             <i className="fas fa-bolt text-[10px]"></i>
-            <span>#1 Plataforma de Rifas en Latinoamérica</span>
+            <span>Plataforma de Rifas en Venezuela</span>
           </div>
           <h1 className="text-6xl md:text-8xl font-black text-white mb-8 leading-[1.1] tracking-tight">
             Crea tu Rifa <br />

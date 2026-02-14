@@ -8,27 +8,27 @@ interface HowItWorksProps {
 const steps = [
   {
     number: '01',
-    icon: 'fa-user-plus',
-    title: 'Crea tu Cuenta',
-    desc: 'Regístrate gratis y configura tu perfil de administrador en segundos.'
+    icon: 'fa-whatsapp',
+    title: 'Contáctanos',
+    desc: 'Envíanos un mensaje con tus datos para solicitar el alta de tu cuenta segurizada.'
   },
   {
     number: '02',
-    icon: 'fa-pen-to-square',
-    title: 'Personaliza',
-    desc: 'Sube fotos de tus premios, define precios y cantidad de números.'
+    icon: 'fa-user-gear',
+    title: 'Activación Manual',
+    desc: 'Nuestro equipo verifica tu información y configura tu usuario y contraseña de administrador.'
   },
   {
     number: '03',
-    icon: 'fa-share-nodes',
-    title: 'Comparte y Vende',
-    desc: 'Envía tu link. El cliente registra sus datos de Pago Móvil, tú verificas el dinero en cuenta y apruebas el ticket.'
+    icon: 'fa-rocket',
+    title: 'Gestiona y Vende',
+    desc: 'Recibe tus credenciales, personaliza los detalles de tu rifa y comienza a vender al instante.'
   },
   {
     number: '04',
     icon: 'fa-trophy',
-    title: 'Sorteo Oficial',
-    desc: 'El ganador se define con la Lotería Triple Táchira. ¡Transparencia total!'
+    title: 'Registra el Ganador',
+    desc: 'Ingresa el resultado de la lotería (ej. Triple Táchira) y el sistema anunciará al ganador.'
   }
 ];
 

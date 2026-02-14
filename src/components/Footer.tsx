@@ -21,7 +21,7 @@ const Footer: React.FC<FooterProps> = ({ navigate }) => {
               <img src={Logo} alt="RifasPlus" className="h-12 object-contain" />
             </div>
             <p className="text-gray-400 mb-10 text-lg leading-relaxed">
-              La infraestructura digital definitiva para sorteos profesionales en toda Latinoamérica. Seguridad, velocidad y éxito.
+              La infraestructura digital definitiva para sorteos profesionales en toda Venezuela. Seguridad, velocidad y éxito.
             </p>
             <div className="flex space-x-5">
               {[

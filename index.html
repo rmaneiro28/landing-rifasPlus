@@ -38,6 +38,8 @@
             scroll-behavior: smooth;
             background-color: #0e1217;
             color: #ffffff;
+            scrollbar-width: thin;
+            scrollbar-color: #2d333b #0e1217;
         }
 
         .gradient-text-purple {
@@ -72,6 +74,25 @@
             background-color: #181b22;
             border: 1px solid #2d333b;
         }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #0e1217;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #2d333b;
+            border: 3px solid #0e1217;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: #8b5cf6;
+        }
     </style>
     <script type="importmap">
 {
@@ -83,7 +104,7 @@
   }
 }
 </script>
-    <link rel="stylesheet" href="/index.css">
+
 </head>
 
 <body class="selection:bg-purple-500/30">

@@ -30,7 +30,7 @@ const HowItWorksPage: React.FC = () => {
             <div className="bg-[#181b22] p-8 rounded-[2rem] border border-[#2d333b] hover:border-[#8b5cf6]/50 transition-all duration-300 hover:-translate-y-1 shadow-xl group">
               <h3 className="text-xl font-bold mb-4 text-white group-hover:text-[#8b5cf6] transition-colors">¿Cómo recibo mi dinero?</h3>
               <p className="text-gray-400 leading-relaxed">
-                Tú decides. Puedes configurar pagos directos a tu cuenta bancaria mediante transferencias, o utilizar pasarelas de pago automáticas. El dinero nunca pasa por RifasPlus, va directo a ti.
+                Tú decides. Puedes configurar pagos directos a tu cuenta bancaria mediante transferencias o Pago Móvil. El dinero nunca pasa por RifasPlus, va directo a ti.
               </p>
             </div>
             <div className="bg-[#181b22] p-8 rounded-[2rem] border border-[#2d333b] hover:border-[#8b5cf6]/50 transition-all duration-300 hover:-translate-y-1 shadow-xl group">
