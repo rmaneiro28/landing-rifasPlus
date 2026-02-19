@@ -25,7 +25,6 @@ const Footer: React.FC<FooterProps> = ({ navigate }) => {
             </p>
             <div className="flex space-x-5">
               {[
-                { icon: 'fa-instagram', color: 'hover:bg-pink-600', link: 'https://instagram.com/rifasplus.ve' },
                 { icon: 'fa-whatsapp', color: 'hover:bg-green-600', link: 'https://wa.me/584123397066' },
               ].map((social, i) => (
                 <a key={i} href={social.link} target="_blank" rel="noopener noreferrer" className={`w-12 h-12 bg-[#181b22] rounded-2xl flex items-center justify-center transition-all duration-300 ${social.color}`}>
