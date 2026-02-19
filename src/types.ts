@@ -7,6 +7,7 @@ export interface Testimonial {
   role: string;
   content: string;
   avatar: string;
+  isCompany?: boolean;
 }
 
 export interface GeminiResponse {

@@ -1,20 +1,24 @@
 
 import React from 'react';
 import { Testimonial } from '../types';
+import LogoJocar from '../assets/logo-jocar.png';
+import LogoMeza from '../assets/Logo Rifas Meza Cars.png';
 
 const testimonials: Testimonial[] = [
   {
     id: 1,
     name: 'Carlos Pérez',
     role: 'Rifas JoCar',
-    avatar: 'https://ui-avatars.com/api/?name=Carlos+Perez&background=random&color=fff',
+    avatar: LogoJocar,
+    isCompany: true,
     content: 'Pudimos vender 10,000 boletos sin un solo error. El panel de administración es muy intuitivo incluso para personas no técnicas.'
   },
   {
     id: 2,
     name: 'Ronald Meza',
     role: 'Rifas Meza Cars',
-    avatar: 'https://ui-avatars.com/api/?name=Ronald+Meza&background=random&color=fff',
+    avatar: LogoMeza,
+    isCompany: true,
     content: 'RifasPlus cambió la forma en que recaudo fondos para mi fundación. Lo que antes tomaba semanas de papeleo, ahora lo hago en minutos.'
   },
   {
@@ -47,7 +51,12 @@ const Testimonials: React.FC = () => {
               <div className="flex items-center">
                 <div className="relative">
                   <div className="absolute inset-0 bg-gradient-to-br from-[#8b5cf6] to-[#ec4899] rounded-full blur-[2px]"></div>
-                  <img src={t.avatar} alt={t.name} className="relative w-14 h-14 rounded-full mr-4 border-2 border-[#181b22] object-cover" />
+                  <img
+                    src={t.avatar}
+                    alt={t.name}
+                    className={`relative w-14 h-14 rounded-full mr-4 border-2 border-[#181b22] ${t.isCompany ? 'object-contain p-1 bg-white/5' : 'object-cover'
+                      }`}
+                  />
                 </div>
                 <div>
                   <h4 className="font-bold text-white text-lg">{t.name}</h4>
