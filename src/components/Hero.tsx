@@ -22,7 +22,7 @@ const Hero: React.FC<HeroProps> = ({ navigate }) => {
             La solución profesional para gestionar sorteos masivos, digitalizar ventas y recaudar con total transparencia.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
-            <a href="https://rifasplus.vercel.app" className="group relative w-full sm:w-auto px-8 py-3 bg-[#8b5cf6] hover:bg-[#7c3aed] text-white rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-xl shadow-purple-500/30 overflow-hidden">
+            <a href="https://wa.me/584123397066" target="_blank" rel="noopener noreferrer" className="group relative w-full sm:w-auto px-8 py-3 bg-[#8b5cf6] hover:bg-[#7c3aed] text-white rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-xl shadow-purple-500/30 overflow-hidden">
               <span className="relative z-10">Gestionar mi Rifa</span>
               <div className="absolute inset-0 bg-white/10 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
             </a>

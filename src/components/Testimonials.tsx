@@ -5,24 +5,24 @@ import { Testimonial } from '../types';
 const testimonials: Testimonial[] = [
   {
     id: 1,
-    name: 'Carlos Mendoza',
-    role: 'Organizador Independiente',
-    avatar: 'https://ui-avatars.com/api/?name=Carlos+Mendoza&background=random&color=fff',
-    content: 'RifasPlus cambió la forma en que recaudo fondos para mi fundación. Lo que antes tomaba semanas de papeleo, ahora lo hago en minutos.'
+    name: 'Carlos Pérez',
+    role: 'Rifas JoCar',
+    avatar: 'https://ui-avatars.com/api/?name=Carlos+Perez&background=random&color=fff',
+    content: 'Pudimos vender 10,000 boletos sin un solo error. El panel de administración es muy intuitivo incluso para personas no técnicas.'
   },
   {
     id: 2,
-    name: 'Ana García',
-    role: 'Emprendedora',
-    avatar: 'https://ui-avatars.com/api/?name=Ana+Garcia&background=random&color=fff',
-    content: 'La integración con WhatsApp es increíble. Mis clientes reciben su boleto al instante y eso genera muchísima confianza.'
+    name: 'Ronald Meza',
+    role: 'Rifas Meza Cars',
+    avatar: 'https://ui-avatars.com/api/?name=Ronald+Meza&background=random&color=fff',
+    content: 'RifasPlus cambió la forma en que recaudo fondos para mi fundación. Lo que antes tomaba semanas de papeleo, ahora lo hago en minutos.'
   },
   {
     id: 3,
-    name: 'Roberto Salas',
-    role: 'Club Deportivo',
-    avatar: 'https://ui-avatars.com/api/?name=Roberto+Salas&background=random&color=fff',
-    content: 'Pudimos vender 10,000 boletos sin un solo error. El panel de administración es muy intuitivo incluso para personas no técnicas.'
+    name: 'Ricardo García',
+    role: 'Emprendedor',
+    avatar: 'https://ui-avatars.com/api/?name=Ricardo+Garcia&background=random&color=fff',
+    content: 'La integración con WhatsApp es increíble. Mis clientes reciben su boleto al instante y eso genera muchísima confianza.'
   }
 ];
 

@@ -44,8 +44,8 @@ const Header: React.FC<HeaderProps> = ({ currentPath, navigate }) => {
               {item.label}
             </button>
           ))}
-          <a href="https://rifasplus.vercel.app" className="bg-[#8b5cf6] hover:bg-[#7c3aed] text-white px-6 py-2.5 rounded-xl text-sm font-bold transition shadow-lg shadow-purple-500/20 active:scale-95">
-            Iniciar Sesión
+          <a href="https://wa.me/584123397066" target="_blank" rel="noopener noreferrer" className="bg-[#8b5cf6] hover:bg-[#7c3aed] text-white px-6 py-2.5 rounded-xl text-sm font-bold transition shadow-lg shadow-purple-500/20 active:scale-95">
+            Agenda tu Demo
           </a>
         </nav>
 
@@ -67,7 +67,7 @@ const Header: React.FC<HeaderProps> = ({ currentPath, navigate }) => {
               {item.label}
             </button>
           ))}
-          <a href="https://rifasplus.vercel.app" className="block bg-[#8b5cf6] text-white px-6 py-4 rounded-2xl text-center font-black shadow-xl shadow-purple-500/20">
+          <a href="https://wa.me/584123397066" target="_blank" rel="noopener noreferrer" className="block bg-[#8b5cf6] text-white px-6 py-4 rounded-2xl text-center font-black shadow-xl shadow-purple-500/20">
             Comenzar Ahora
           </a>
         </div>

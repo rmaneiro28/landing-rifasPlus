@@ -1,11 +1,5 @@
 
-export interface RafflePlan {
-  id: string;
-  name: string;
-  price: string;
-  features: string[];
-  recommended?: boolean;
-}
+
 
 export interface Testimonial {
   id: number;

@@ -25,9 +25,8 @@ const Footer: React.FC<FooterProps> = ({ navigate }) => {
             </p>
             <div className="flex space-x-5">
               {[
-                { icon: 'fa-facebook-f', color: 'hover:bg-blue-600', link: 'https://facebook.com' },
-                { icon: 'fa-instagram', color: 'hover:bg-pink-600', link: 'https://instagram.com' },
-                { icon: 'fa-whatsapp', color: 'hover:bg-green-600', link: 'https://wa.me/584120000000' },
+                { icon: 'fa-instagram', color: 'hover:bg-pink-600', link: 'https://instagram.com/rifasplus.ve' },
+                { icon: 'fa-whatsapp', color: 'hover:bg-green-600', link: 'https://wa.me/584123397066' },
               ].map((social, i) => (
                 <a key={i} href={social.link} target="_blank" rel="noopener noreferrer" className={`w-12 h-12 bg-[#181b22] rounded-2xl flex items-center justify-center transition-all duration-300 ${social.color}`}>
                   <i className={`fab ${social.icon} text-xl`}></i>
@@ -49,7 +48,7 @@ const Footer: React.FC<FooterProps> = ({ navigate }) => {
           <div className="col-span-1 md:col-span-1">
             <h4 className="text-xl font-black mb-8 text-[#8b5cf6]">Recursos</h4>
             <ul className="space-y-4 text-gray-400 font-bold">
-              <li><button onClick={() => navigate('casos-de-exito')} className="hover:text-white transition-colors">Historias de Éxito</button></li>
+
               <li><button onClick={() => navigate('legal')} className="hover:text-white transition-colors">Guía Legal</button></li>
               <li><button onClick={() => navigate('terminos')} className="hover:text-white transition-colors">Términos</button></li>
             </ul>
