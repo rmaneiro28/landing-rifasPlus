@@ -145,7 +145,7 @@ const Pricing: React.FC<PricingProps> = ({ compact = false }) => {
                 { q: "¿Tengo que pagar una mensualidad?", a: "No. En Rifas Plus no existen las mensualidades obligatorias. Solo cobramos una pequeña comisión del 2% cuando vendes un ticket." },
                 { q: "¿El dinero de las ventas pasa por ustedes?", a: "No. El dinero va directamente del comprador a tus cuentas bancarias. Tú tienes el control total de tu flujo de caja." },
                 { q: "¿Qué pasa si no vendo todos los números?", a: "No hay penalización ni costos ocultos. Nuestra comisión se calcula únicamente sobre los tickets que efectivamente hayas vendido." },
-                { q: "¿Cómo verifico los pagos?", a: "Tus clientes suben el comprobante y tú lo validas desde tu panel administrativo. Al validarlo, el ticket cambia a estado Vendido y se le notifica al cliente." }
+                { q: "¿Los clientes reciben algún comprobante?", a: "¡Claro! Al confirmar la compra, el cliente recibe un ticket digital con sus números y los detalles del sorteo, lo que genera confianza y orden en tu proceso de venta." }
               ].map((faq, i) => (
                 <div key={i} className="bg-[#1f2937] border border-gray-800 rounded-2xl p-6 hover:border-gray-700 transition-colors">
                   <h4 className="text-lg font-bold text-white mb-3 flex items-center">

@@ -40,15 +40,9 @@ const HowItWorksPage: React.FC = () => {
               </p>
             </div>
             <div className="bg-[#181b22] p-8 rounded-[2rem] border border-[#2d333b] hover:border-[#8b5cf6]/50 transition-all duration-300 hover:-translate-y-1 shadow-xl group">
-              <h3 className="text-xl font-bold mb-4 text-white group-hover:text-[#8b5cf6] transition-colors">¿Puedo usar mi propio dominio?</h3>
+              <h3 className="text-xl font-bold mb-4 text-white group-hover:text-[#8b5cf6] transition-colors">¿Qué necesito para empezar hoy mismo?</h3>
               <p className="text-gray-400 leading-relaxed">
-                ¡Sí! En los planes Profesional y Eventos puedes vincular tu propio dominio (ej: misorteo.com) para una marca 100% personalizada.
-              </p>
-            </div>
-            <div className="bg-[#181b22] p-8 rounded-[2rem] border border-[#2d333b] hover:border-[#8b5cf6]/50 transition-all duration-300 hover:-translate-y-1 shadow-xl group">
-              <h3 className="text-xl font-bold mb-4 text-white group-hover:text-[#8b5cf6] transition-colors">¿Cómo se elige al ganador?</h3>
-              <p className="text-gray-400 leading-relaxed">
-                Ofrecemos un generador aleatorio integrado que selecciona un boleto entre los vendidos. Puedes realizar el sorteo en vivo y grabarlo para máxima transparencia.
+                Solo necesitas registrarte, definir el nombre de tu sorteo, el valor del boleto y tus métodos de pago. ¡Estarás vendiendo en menos de 5 minutos!
               </p>
             </div>
           </div>

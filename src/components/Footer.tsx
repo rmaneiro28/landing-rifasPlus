@@ -40,7 +40,7 @@ const Footer: React.FC<FooterProps> = ({ navigate }) => {
               <li><button onClick={() => navigate('caracteristicas')} className="hover:text-white transition-colors">Características</button></li>
               <li><button onClick={() => navigate('como-funciona')} className="hover:text-white transition-colors">Cómo Funciona</button></li>
               <li><button onClick={() => navigate('precios')} className="hover:text-white transition-colors">Precios</button></li>
-              <li><a href="mailto:soporte@rifasplus.com" className="hover:text-white transition-colors">Ayuda</a></li>
+              <li><a href="mailto:rmaneiro28@gmail.com" className="hover:text-white transition-colors">Ayuda</a></li>
             </ul>
           </div>
 
